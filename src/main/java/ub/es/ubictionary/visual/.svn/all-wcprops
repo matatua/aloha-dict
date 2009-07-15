@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/18/trunk/src/ub/es/ubictionary/visual
+END
+DList.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/DList.java
+END
+MenuCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/MenuCanvas.java
+END
+DictionaryCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/DictionaryCanvas.java
+END
+SearchCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/18/trunk/src/ub/es/ubictionary/visual/SearchCanvas.java
+END
+Flecha.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/Flecha.java
+END
+DCombo.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/DCombo.java
+END
+DControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/DControl.java
+END
+AboutCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/8/trunk/src/ub/es/ubictionary/visual/AboutCanvas.java
+END
+ResultCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/ResultCanvas.java
+END
+KeyboardCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/KeyboardCanvas.java
+END
+DTextField.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/18/trunk/src/ub/es/ubictionary/visual/DTextField.java
+END
+InterfaceCanvas.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/InterfaceCanvas.java
+END
+LineEnumeration.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/src/ub/es/ubictionary/visual/LineEnumeration.java
+END

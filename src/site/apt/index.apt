@@ -1,0 +1,16 @@
+~~ @version $Revision: 98 $ ($Author: vlads $) $Date: 2007-04-20 20:05:31 -0400 (Fri, 20 Apr 2007) $
+
+                                    ------------------
+                                    Overview
+                                    ------------------
+
+
+omnidic
+
+* Overview
+
+  The omnidic project is J2ME application.
+
+* Try this MIDlet
+
+   {{{omnidic.jad}omnidic Demo}}
