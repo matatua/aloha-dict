@@ -18,19 +18,16 @@ public class MenuController implements Controller
 {
 	private MenuCanvas canvas;
 	private int selectedItem;
-	private Command commandExit, commandGoTo;
+	private Command commandExit;
 	
 	public MenuController (MenuCanvas canvas)
 	{
 		this.canvas = canvas;
 		this.selectedItem = 0;
 		
-		// TODO: externalize labels
-		commandExit = new Command("Exit", Command.EXIT, 2);
-		commandGoTo = new Command("GoTo", Command.HELP, 1);
+		commandExit = new Command(MenuBean.EXIT, Command.EXIT, 2);
 		
-		canvas.addCommand(commandExit);
-		canvas.addCommand(commandGoTo);
+		this.canvas.addCommand(commandExit);
 	}
 	
 	public void keyPressed(int keyCode)
@@ -47,6 +44,13 @@ public class MenuController implements Controller
 		}
 		if (canvas.getGameAction(keyCode) == Canvas.FIRE || keyCode == Canvas.KEY_NUM5)
 		{
+			String item = MenuBean.getMenuItems()[selectedItem];
+			if (MenuBean.EXIT.compareTo(item) == 0)
+			{
+				commandAction (commandExit, canvas);
+				return;
+			}
+			
 			AlohaController.getInstance().switchSection (MenuBean.getMenuItems()[selectedItem]);
 		}
 	}
@@ -56,17 +60,6 @@ public class MenuController implements Controller
 		if (command == commandExit)
 		{
 			AlohaController.getInstance().getAlohaMIDlet().notifyDestroyed();
-		}
-			
-		if (command == commandGoTo)
-		{
-//			mostrarAyuda = true;
-//			removeCommand(commandExit);
-//			removeCommand(commandHelp);
-//			addCommand(commandBack);
-//			firstVisible = 0;
-//			lastVisible = lineasVisibles;
-//			cargarAyuda(midlet.cfg.getPalabra("texto_ayuda"));
 		}
 	}
 	
@@ -98,7 +91,6 @@ public class MenuController implements Controller
 	public void setLanguage()
 	{
 		canvas.removeCommand(commandExit);
-		canvas.removeCommand(commandGoTo);
 
 		// commandExit = new Command(midlet.cfg.getPalabra("salir"),
 		// Command.EXIT, 2);
@@ -108,10 +100,8 @@ public class MenuController implements Controller
 		// Command.BACK, 1);
 
 		commandExit = new Command("Exit", Command.EXIT, 2);
-		commandGoTo = new Command("GoTo", Command.HELP, 1);
 
 		canvas.addCommand(commandExit);
-		canvas.addCommand(commandGoTo);
 
 	}
 }

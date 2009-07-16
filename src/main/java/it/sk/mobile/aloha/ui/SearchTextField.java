@@ -44,7 +44,7 @@ public class SearchTextField extends Widget
 		{
 			// draw cursor
 			graphics.setColor(0);
-			graphics.drawLine(cursorPosition, areaBean.y -2, cursorPosition, areaBean.height - 2);
+			graphics.drawLine(areaBean.x + cursorPosition, areaBean.y + 2, areaBean.x + cursorPosition, areaBean.y + areaBean.height - 2);
 		}
 	}
 	

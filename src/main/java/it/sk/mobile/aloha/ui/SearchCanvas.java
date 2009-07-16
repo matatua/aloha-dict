@@ -13,8 +13,6 @@
 package it.sk.mobile.aloha.ui;
 
 import it.sk.mobile.aloha.controller.Controller;
-import it.sk.mobile.aloha.controller.MenuController;
-import it.sk.mobile.aloha.ui.bean.MenuBean;
 import it.sk.mobile.aloha.ui.utils.UIUtils;
 
 import javax.microedition.lcdui.Canvas;
@@ -22,7 +20,6 @@ import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;
 import javax.microedition.lcdui.Displayable;
 import javax.microedition.lcdui.Graphics;
-import javax.microedition.lcdui.TextField;
 
 
 /**
@@ -33,12 +30,15 @@ import javax.microedition.lcdui.TextField;
  */
 public class SearchCanvas extends Canvas implements CommandListener, AlohaCanvas
 {
-	private MenuController menuController;
+	private SearchController searchController;
 	private SearchTextField searchString;
 	
 	public SearchCanvas ()
 	{
+		searchController = new SearchController (this);
 		searchString = new SearchTextField ();
+		
+		setCommandListener(searchController);
 	}
 	
 	
@@ -51,13 +51,18 @@ public class SearchCanvas extends Canvas implements CommandListener, AlohaCanvas
 
 	public void commandAction(Command c, Displayable d)
 	{
-		// TODO Auto-generated method stub
-		
+		searchController.commandAction(c, d);
 	}
 
 	public Controller getController()
 	{
+		return searchController;
+	}
+
+
+	public void focus()
+	{
+		searchString.setFocused(true);
 		
-		return menuController;
 	}
 }

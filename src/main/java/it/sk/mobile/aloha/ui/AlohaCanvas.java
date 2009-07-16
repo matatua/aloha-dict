@@ -13,4 +13,9 @@ public interface AlohaCanvas
 	 * Get the controller for this Canvas
 	 */
 	public Controller getController ();
+	
+	/**
+	 * notify the canvas that it is now focused
+	 */
+	public void focus();
 }

@@ -46,10 +46,8 @@ public class AlohaController implements CommandListener
 	
 	public void start ()
 	{
-//		display.setCurrent(searchCanvas);
-		this.menuCanvas = new MenuCanvas (alohaMIDlet);
-		
-		display.setCurrent(menuCanvas);
+		Displayable canvas = resolveCanvas(MenuBean.SEARCH);
+		display.setCurrent(canvas);
 	}
 	
 	public void setAlohaMIDlet (AlohaMIDlet midlet)
@@ -94,8 +92,19 @@ public class AlohaController implements CommandListener
 			if (searchCanvas == null)
 			{
 				searchCanvas = new SearchCanvas ();
+				searchCanvas.focus();
 			}
 			displayable = searchCanvas;
+		}
+		
+		if (label.compareTo(MenuBean.GOTO) == 0)
+		{
+			if (menuCanvas == null)
+			{
+				menuCanvas = new MenuCanvas (getAlohaMIDlet());
+				menuCanvas.focus();
+			}
+			displayable = menuCanvas;
 		}
 
 		// default: stay where we are

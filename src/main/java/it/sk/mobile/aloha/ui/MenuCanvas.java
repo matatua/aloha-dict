@@ -100,4 +100,9 @@ public class MenuCanvas extends Canvas implements CommandListener, AlohaCanvas
 	{
 		return menuController;
 	}
+
+	public void focus()
+	{
+		
+	}
 }

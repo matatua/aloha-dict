@@ -12,16 +12,17 @@ import it.sk.mobile.aloha.controller.Utils;
  */
 public class MenuBean
 {
-	// backward compatibility with OmniDictionary
 	private static final String[] menuItems;
 	
-	public static final String SEARCH = "search";
-	public static final String DICTIONARY = "dictionary";
-	public static final String KEYBOARD = "keyboard";
-	public static final String LANGUAGE = "language";
-	public static final String HELP = "help";
-	public static final String ABOUT = "about";
-	public static final String EXIT = "exit";
+	public static final String SEARCH = "Search";
+	public static final String DICTIONARY = "Dictionary";
+	public static final String KEYBOARD = "Keyboard";
+	public static final String LANGUAGE = "Language";
+	public static final String HELP = "Help";
+	public static final String ABOUT = "About";
+	public static final String EXIT = "Exit";
+
+	public static final String GOTO = "Menu";
 	
 	static
 	{
